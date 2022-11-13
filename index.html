@@ -1,190 +1,455 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
-    <title>Portfolio & Blog</title>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>BLOG SCRATCH</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-    <link rel="stylesheet" href="styles.css">
-<!--    TODO: -->
-<!--    1. find font-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
 
+    <link rel="stylesheet" href="index.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
 
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
 </head>
-
 <body>
-<section class="section-0">
-    <header>
-        <div class="navbar-container">
-            <figure class="navbar-figure">
-                <img class="navbar-photo" src="images/profile-picture.jpeg">
-                <figcaption>
-                    <p class="navbar-caption">Malik Willis</p>
-                </figcaption>
-            </figure>
-            <div class="navbar-menu">
-                <button class="navbar-button" id="navbar-button" type="button">Menu</button>
-            </div>
-        </div>
-    </header>
+<header>
     <nav class="navbar">
-        <ol type="I" class="navbar-list" id="navbar-list">
-            <div class="navbar-left">
-                <li style="background-color: black"><span class="navbar-list-text" style="color: white">Bio</span></li>
-                <li><span class="navbar-list-text">My principle</span></li>
-                <li><span class="navbar-list-text">Subscribe</span></li>
-                <li><span class="navbar-list-text">Follow me</span></li>
-                <li><span class="navbar-list-text">Contact</span></li>
-            </div>
-            <div class="navbar-right">
-                <li><span class="navbar-list-text">Hello</span></li>
-                <li><span class="navbar-list-text">Blog</span></li>
-                <li><span class="navbar-list-text">Portfolio</span></li>
-                <li><span class="navbar-list-text">Tools</span></li>
-            </div>
-        </ol>
+        <div class="navbarItem">
+            <img class="headshot" src="IMG_77FDD1B4EABA-1.jpeg">
+            <div style="padding-left: 5px">Malik Willis</div>
+        </div>
+        <div class="navbarMenu" id="navbarMenuBtn">Menu</div>
     </nav>
-</section>
-
-
-<main id="main">
-    <div class="intro">
-        <div class="intro-container">
-            <div class="intro-text-container"><p class="intro-text" id="intro-text">Hi, I'm Malik. I'm a Software</p></div>
-            <div class="intro-text-container" style="width: 90%"><p class="intro-text">Developer and this is my</p></div>
-            <div class="intro-text-container" style="width: 65%"><p class="intro-text">Blog and Portfolio.</p></div>
+</header>
+<nav id="navbarList" style="display: none">
+    <div class="navbarList">
+        <div class="navbarMenuLeft">
+            <div class="navbarMenuItem"><span class="navbarMenuEmoji">&#128075;&#127998;</span>Hello, there</div>
+            <div class="navbarMenuItem"><span class="navbarMenuNumber">02.</span>Skills</div>
+            <div class="navbarMenuItem"><span class="navbarMenuNumber">04.</span>Blog</div>
+            <div class="navbarMenuItem"><span class="navbarMenuNumber">06.</span>Bio</div>
+            <div class="navbarMenuItem"><span class="navbarMenuNumber">08.</span>Contact Me</div>
         </div>
-
-        <div class="intro-city-container">
-            <p class="intro-based-in">based in</p>
-            <div class="intro-city">
-                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-geo-alt" viewBox="0 0 16 16">
-                    <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z"/>
-                    <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
-                </svg>
-                <p class="intro-city-text">Texas</p>
-            </div>
+        <div class="navbarMenuRight">
+            <div class="navbarMenuItem"><span class="navbarMenuNumber">01.</span>Portfolio</div>
+            <div class="navbarMenuItem"><span class="navbarMenuNumber">03.</span>Principles</div>
+            <div class="navbarMenuItem"><span class="navbarMenuNumber">05.</span>Subscribe</div>
+            <div class="navbarMenuItem"><span class="navbarMenuNumber">07.</span>Follow Me</div>
         </div>
     </div>
+</nav>
+<main>
+    <section class="introSection">
+        <div class="intro">
+            <div class="intro-container">
+                <div class=""><h2 class="intro-text-container" style="width:80%">Hi &#128075;&#127998;, I'm Malik. A</h2></div>
+                <div class="intro-text-container" style=""><h2 class="intro-text" id="intro-text"> Software Developer, that</h2></div>
+                <div class="intro-text-container" style="width: 95%"><h2 class="intro-text">brings thoughts to life</h2></div>
+                <div class="intro-city-container">
+                    <div>based in
+                        <span class="introBox">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-geo-alt" viewBox="0 0 16 16">
+                            <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z"/>
+                            <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+                        </svg>Texas
+                    </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="projectSection">
+        <div class="recentProjectSubheading">
+            <p><a href="">Recent Project</a></p>
+        </div>
+        <figure class="recentProject">
+            <img class="recentProjectImg" src="pexels-pixabay-38271.jpg">
+            <h3 class="recentProjectTitle">WeatherAtlas</h3>
+            <figcaption class="recentProjectDesc">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A dignissimos dolor earum esse expedita id ipsum minima molestias nisi officiis pariatur quas sequi, temporibus, velit veniam. Deserunt doloribus exercitationem in maiores, praesentium tempora? Amet architecto earum et, fugiat ipsa ratione temporibus. Culpa facilis incidunt laborum maxime modi nemo provident ratione temporibus.
+                </p>
+                <a href="" style="color: grey">read more
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+                    </svg>
+                </a>
+                <div class="recentProjectBtn"></div>
+            </figcaption>
+        </figure>
+        <section class="moreProjectsSection">
+            <div class="recentProjectSubheading">
+                <p><a href="">Latest Projects</a></p>
+            </div>
+            <div class="moreProjects">
+                <div class="moreProjectsContainer">
+                    <img class="moreProjectsImg" src="pexels-pixabay-38271.jpg">
+                    <div class="moreProjectsTitle"><h5>WeatherAtlas 2.0 Remake with added features</h5></div>
+                    <button class="moreProjectsBtn" id="moreProjectsExpandBtn">expand</button>
+                    <div class="expandIcon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-expand" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M3.646 9.146a.5.5 0 0 1 .708 0L8 12.793l3.646-3.647a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 0-.708zm0-2.292a.5.5 0 0 0 .708 0L8 3.207l3.646 3.647a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 0 0 0 .708z"/>
+                        </svg>
+                    </div>
+                </div>
+                <div class="moreProjectsDetail" id="moreProjectsDetail">
+                    <div>
+                        <div>
+                            <img class="moreProjectDetailImg" src="pexels-picjumbocom-196645.jpg">
+                        </div>
+                    </div>
+                    <div>
+                        <div>
+                            <img class="moreProjectDetailImg" src="pexels-picjumbocom-196645.jpg">
+                        </div>
+                    </div>
+                    <div>
+                        <div>
+                            <img class="moreProjectDetailImg" src="pexels-picjumbocom-196645.jpg">
+                        </div>
+                    </div>
+                    <div>
+                        <div class="moreProjectsDetailHeading">
+                            <h6>Description</h6>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus dolorem ea, fugit laudantium modi necessitatibus nesciunt omnis? Ab aspernatur et, illum iste quaerat quam quasi sint sit vel voluptatum? Adipisci autem blanditiis dignissimos dolor eligendi enim exercitationem facere fugit incidunt molestiae neque, odio repellat repellendus tenetur ut veniam voluptatum! Est!
+                            </p>
+                        </div>
+                    </div>
+                    <div>
+                        <div>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam dicta eligendi exercitationem omnis perspiciatis quod quos recusandae. Adipisci aliquid, dolorum ducimus earum magnam minima modi, obcaecati odit omnis ratione temporibus velit veritatis, voluptatibus. Alias asperiores corporis dolorum ea eligendi esse explicabo itaque, nisi nostrum, obcaecati veritatis voluptatem. Ad animi, ratione.
+
+                        </div>
+                    </div>
+                    <div>
+                        <div class="moreProjectsDetailHeading">
+                            <h6>Technologies</h6>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis cum exercitationem incidunt libero officia quaerat veritatis voluptatibus? Architecto consectetur culpa cum, deleniti dolor dolorum et excepturi fuga, incidunt ipsa itaque iusto molestias, natus nobis nulla pariatur porro possimus quaerat quisquam repellendus rerum sed sequi sit soluta tempore ut vel voluptatibus.
+                            </p>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="moreProjectsContainer">
+                    <img class="moreProjectsImg" src="pexels-picjumbocom-196645.jpg">
+                    <div class="moreProjectsTitle"><h5>MovieApp Archive</h5></div>
+                    <button class="moreProjectsBtn" id="moreProjectsExpandBtn1">expand</button>
+                    <div class="expandIcon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-expand" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M3.646 9.146a.5.5 0 0 1 .708 0L8 12.793l3.646-3.647a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 0-.708zm0-2.292a.5.5 0 0 0 .708 0L8 3.207l3.646 3.647a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 0 0 0 .708z"/>
+                        </svg>
+                    </div>
+                </div>
+                <div class="moreProjectsDetail1" id="moreProjectsDetail1">
+                    <div>
+                        <div>
+                            <img class="moreProjectDetailImg" src="pexels-picjumbocom-196645.jpg">
+                        </div>
+                    </div>
+                    <div>
+                        <div>
+                            <img class="moreProjectDetailImg" src="pexels-picjumbocom-196645.jpg">
+                        </div>
+                    </div>
+                    <div>
+                        <div>
+                            <img class="moreProjectDetailImg" src="pexels-picjumbocom-196645.jpg">
+                        </div>
+                    </div>
+                    <div>
+                        <div class="moreProjectsDetailHeading">
+                            <h6>Description</h6>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus dolorem ea, fugit laudantium modi necessitatibus nesciunt omnis? Ab aspernatur et, illum iste quaerat quam quasi sint sit vel voluptatum? Adipisci autem blanditiis dignissimos dolor eligendi enim exercitationem facere fugit incidunt molestiae neque, odio repellat repellendus tenetur ut veniam voluptatum! Est!
+                            </p>
+                        </div>
+                    </div>
+                    <div>
+                        <div>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam dicta eligendi exercitationem omnis perspiciatis quod quos recusandae. Adipisci aliquid, dolorum ducimus earum magnam minima modi, obcaecati odit omnis ratione temporibus velit veritatis, voluptatibus. Alias asperiores corporis dolorum ea eligendi esse explicabo itaque, nisi nostrum, obcaecati veritatis voluptatem. Ad animi, ratione.
+
+                        </div>
+                    </div>
+                    <div>
+                        <div class="moreProjectsDetailHeading">
+                            <h6>Technologies</h6>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis cum exercitationem incidunt libero officia quaerat veritatis voluptatibus? Architecto consectetur culpa cum, deleniti dolor dolorum et excepturi fuga, incidunt ipsa itaque iusto molestias, natus nobis nulla pariatur porro possimus quaerat quisquam repellendus rerum sed sequi sit soluta tempore ut vel voluptatibus.
+                            </p>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="moreProjectsContainer">
+                    <img class="moreProjectsImg" src="pexels-picjumbocom-196645.jpg">
+                    <div class="moreProjectsTitle"><h5>Local Adlister</h5></div>
+                    <button class="moreProjectsBtn" id="moreProjectsExpandBtn2">expand</button>
+                    <div class="expandIcon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-expand" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M3.646 9.146a.5.5 0 0 1 .708 0L8 12.793l3.646-3.647a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 0-.708zm0-2.292a.5.5 0 0 0 .708 0L8 3.207l3.646 3.647a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 0 0 0 .708z"/>
+                        </svg>
+                    </div>
+                </div>
+                <div class="moreProjectsDetail1" id="moreProjectsDetail2">
+                    <div>
+                        <div>
+                            <img class="moreProjectDetailImg" src="pexels-picjumbocom-196645.jpg">
+                        </div>
+                    </div>
+                    <div>
+                        <div>
+                            <img class="moreProjectDetailImg" src="pexels-picjumbocom-196645.jpg">
+                        </div>
+                    </div>
+                    <div>
+                        <div>
+                            <img class="moreProjectDetailImg" src="pexels-picjumbocom-196645.jpg">
+                        </div>
+                    </div>
+                    <div>
+                        <div class="moreProjectsDetailHeading">
+                            <h6>Description</h6>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus dolorem ea, fugit laudantium modi necessitatibus nesciunt omnis? Ab aspernatur et, illum iste quaerat quam quasi sint sit vel voluptatum? Adipisci autem blanditiis dignissimos dolor eligendi enim exercitationem facere fugit incidunt molestiae neque, odio repellat repellendus tenetur ut veniam voluptatum! Est!
+                            </p>
+                        </div>
+                    </div>
+                    <div>
+                        <div>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam dicta eligendi exercitationem omnis perspiciatis quod quos recusandae. Adipisci aliquid, dolorum ducimus earum magnam minima modi, obcaecati odit omnis ratione temporibus velit veritatis, voluptatibus. Alias asperiores corporis dolorum ea eligendi esse explicabo itaque, nisi nostrum, obcaecati veritatis voluptatem. Ad animi, ratione.
+
+                        </div>
+                    </div>
+                    <div>
+                        <div class="moreProjectsDetailHeading">
+                            <h6>Technologies</h6>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis cum exercitationem incidunt libero officia quaerat veritatis voluptatibus? Architecto consectetur culpa cum, deleniti dolor dolorum et excepturi fuga, incidunt ipsa itaque iusto molestias, natus nobis nulla pariatur porro possimus quaerat quisquam repellendus rerum sed sequi sit soluta tempore ut vel voluptatibus.
+                            </p>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="moreProjectsContainer">
+                    <img class="moreProjectsImg" src="pexels-picjumbocom-196645.jpg">
+                    <div class="moreProjectsTitle"><h5>Javascript Calculator</h5></div>
+                    <button class="moreProjectsBtn" id="moreProjectsExpandBtn3">expand</button>
+                    <div class="expandIcon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-expand" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M3.646 9.146a.5.5 0 0 1 .708 0L8 12.793l3.646-3.647a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 0-.708zm0-2.292a.5.5 0 0 0 .708 0L8 3.207l3.646 3.647a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 0 0 0 .708z"/>
+                        </svg>
+                    </div>
+                </div>
+                <div class="moreProjectsDetail1" id="moreProjectsDetail3">
+                    <div>
+                        <div>
+                            <img class="moreProjectDetailImg" src="pexels-picjumbocom-196645.jpg">
+                        </div>
+                    </div>
+                    <div>
+                        <div>
+                            <img class="moreProjectDetailImg" src="pexels-picjumbocom-196645.jpg">
+                        </div>
+                    </div>
+                    <div>
+                        <div>
+                            <img class="moreProjectDetailImg" src="pexels-picjumbocom-196645.jpg">
+                        </div>
+                    </div>
+                    <div>
+                        <div class="moreProjectsDetailHeading">
+                            <h6>Description</h6>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus dolorem ea, fugit laudantium modi necessitatibus nesciunt omnis? Ab aspernatur et, illum iste quaerat quam quasi sint sit vel voluptatum? Adipisci autem blanditiis dignissimos dolor eligendi enim exercitationem facere fugit incidunt molestiae neque, odio repellat repellendus tenetur ut veniam voluptatum! Est!
+                            </p>
+                        </div>
+                    </div>
+                    <div>
+                        <div>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam dicta eligendi exercitationem omnis perspiciatis quod quos recusandae. Adipisci aliquid, dolorum ducimus earum magnam minima modi, obcaecati odit omnis ratione temporibus velit veritatis, voluptatibus. Alias asperiores corporis dolorum ea eligendi esse explicabo itaque, nisi nostrum, obcaecati veritatis voluptatem. Ad animi, ratione.
+
+                        </div>
+                    </div>
+                    <div>
+                        <div class="moreProjectsDetailHeading">
+                            <h6>Technologies</h6>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis cum exercitationem incidunt libero officia quaerat veritatis voluptatibus? Architecto consectetur culpa cum, deleniti dolor dolorum et excepturi fuga, incidunt ipsa itaque iusto molestias, natus nobis nulla pariatur porro possimus quaerat quisquam repellendus rerum sed sequi sit soluta tempore ut vel voluptatibus.
+                            </p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+    <section class="technologiesSection">
+        <div class="recentProjectSubheading">
+            <p><a href="">Technologies</a></p>
+        </div>
+        <div class="technologiesContainer">
+            <div class="technologiesRow">
+                <div class="box"><img style="width: 60%" style="height: 60%" class="icon" src="icon_images/html.svg"></div>
+                <div class="box"><img style="width: 60%" style="height: 60%" class="icon" src="icon_images/css3.svg"></div>
+                <div class="box"></div>
+            </div>
+            <div class="technologiesRow">
+
+                <div class="box"><img style="width: 60%" style="height: 60%" class="icon" src="icon_images/bootstrap.svg"></div>
+                <div class="box"><img style="width: 60%" style="height: 80%" class="icon" src="icon_images/jquery.svg"></div>
+                <div class="box"><img style="width: 60%" style="height: 80%" class="icon" src="icon_images/spring-boot.svg"></div>
+            </div>
+            <div class="technologiesRow">
+                <div class="box"><img style="width: 60%" style="height: 60%" class="icon" src="icon_images/javascript.svg"></div>
+                <div class="box"><img style="width: 60%" style="height: 60%" class="icon" src="icon_images/mysql%20(2).svg"></div>
+                <div class="box"><img style="width: 60%" style="height: 60%" class="icon" src="icon_images/java.svg"></div>
+                <!--                <div class="box"><img style="width: 75%" style="height: 75%" class="icon" src=""></div>-->
+            </div>
+        </div>
+
+    </section>
+    <section class="blogSection">
+        <div class="recentProjectSubheading">
+            <p style="padding: 3em 0em 2em 1em"><a href="" >Blog</a></p>
+        </div>
+        <div class="blogContainer">
+            <div class="blog">
+                <div class="blogDetails">
+                    <div class="blogBullet"><p class="blogNumber">01</p></div>
+                    <div class="blogInfo">
+                        <div class="blogCategory">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="Blue" class="bi bi-journal" viewBox="0 0 16 16">
+                                <path d="M3 0h10a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-1h1v1a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H3a1 1 0 0 0-1 1v1H1V2a2 2 0 0 1 2-2z"/>
+                                <path d="M1 5v-.5a.5.5 0 0 1 1 0V5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1zm0 3v-.5a.5.5 0 0 1 1 0V8h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1zm0 3v-.5a.5.5 0 0 1 1 0v.5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1z"/>
+                            </svg>
+                            Notes</div>
+                        <div class="blogTitle">Is Meta able to pull of their ideas? I think so</div>
+                        <div class="blogSubInfo">
+                            <div class="blogDate">Nov/12/2022</div>
+                            <div class="blogReadLength">3min
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="Blue" class="bi bi-book" viewBox="0 0 16 16">
+                                    <path d="M1 2.828c.885-.37 2.154-.769 3.388-.893 1.33-.134 2.458.063 3.112.752v9.746c-.935-.53-2.12-.603-3.213-.493-1.18.12-2.37.461-3.287.811V2.828zm7.5-.141c.654-.689 1.782-.886 3.112-.752 1.234.124 2.503.523 3.388.893v9.923c-.918-.35-2.107-.692-3.287-.81-1.094-.111-2.278-.039-3.213.492V2.687zM8 1.783C7.015.936 5.587.81 4.287.94c-1.514.153-3.042.672-3.994 1.105A.5.5 0 0 0 0 2.5v11a.5.5 0 0 0 .707.455c.882-.4 2.303-.881 3.68-1.02 1.409-.142 2.59.087 3.223.877a.5.5 0 0 0 .78 0c.633-.79 1.814-1.019 3.222-.877 1.378.139 2.8.62 3.681 1.02A.5.5 0 0 0 16 13.5v-11a.5.5 0 0 0-.293-.455c-.952-.433-2.48-.952-3.994-1.105C10.413.809 8.985.936 8 1.783z"/>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="blog">
+                <div class="blogDetails">
+                    <div class="blogBullet"><p class="blogNumber">02</p></div>
+                    <div class="blogInfo">
+                        <div class="blogCategory">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="Blue" class="bi bi-journal" viewBox="0 0 16 16">
+                                <path d="M3 0h10a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-1h1v1a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H3a1 1 0 0 0-1 1v1H1V2a2 2 0 0 1 2-2z"/>
+                                <path d="M1 5v-.5a.5.5 0 0 1 1 0V5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1zm0 3v-.5a.5.5 0 0 1 1 0V8h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1zm0 3v-.5a.5.5 0 0 1 1 0v.5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1z"/>
+                            </svg>
+                            Notes</div>
+                        <div class="blogTitle">What I learned form the military and how I use it</div>
+                        <div class="blogSubInfo">
+                            <div class="blogDate">Nov/12/2022</div>
+                            <div class="blogReadLength">7min
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="Blue" class="bi bi-book" viewBox="0 0 16 16">
+                                    <path d="M1 2.828c.885-.37 2.154-.769 3.388-.893 1.33-.134 2.458.063 3.112.752v9.746c-.935-.53-2.12-.603-3.213-.493-1.18.12-2.37.461-3.287.811V2.828zm7.5-.141c.654-.689 1.782-.886 3.112-.752 1.234.124 2.503.523 3.388.893v9.923c-.918-.35-2.107-.692-3.287-.81-1.094-.111-2.278-.039-3.213.492V2.687zM8 1.783C7.015.936 5.587.81 4.287.94c-1.514.153-3.042.672-3.994 1.105A.5.5 0 0 0 0 2.5v11a.5.5 0 0 0 .707.455c.882-.4 2.303-.881 3.68-1.02 1.409-.142 2.59.087 3.223.877a.5.5 0 0 0 .78 0c.633-.79 1.814-1.019 3.222-.877 1.378.139 2.8.62 3.681 1.02A.5.5 0 0 0 16 13.5v-11a.5.5 0 0 0-.293-.455c-.952-.433-2.48-.952-3.994-1.105C10.413.809 8.985.936 8 1.783z"/>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="blog">
+                <div class="blogDetails">
+                    <div class="blogBullet"><p class="blogNumber">03</p></div>
+                    <div class="blogInfo">
+                        <div class="blogCategory">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="Blue" class="bi bi-journal" viewBox="0 0 16 16">
+                                <path d="M3 0h10a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-1h1v1a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H3a1 1 0 0 0-1 1v1H1V2a2 2 0 0 1 2-2z"/>
+                                <path d="M1 5v-.5a.5.5 0 0 1 1 0V5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1zm0 3v-.5a.5.5 0 0 1 1 0V8h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1zm0 3v-.5a.5.5 0 0 1 1 0v.5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1z"/>
+                            </svg>
+                            Notes</div>
+                        <div class="blogTitle">How software changed my life and it started with a bootcamp</div>
+                        <div class="blogSubInfo">
+                            <div class="blogDate">Nov/12/2022</div>
+                            <div class="blogReadLength">15min
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="Blue" class="bi bi-book" viewBox="0 0 16 16">
+                                    <path d="M1 2.828c.885-.37 2.154-.769 3.388-.893 1.33-.134 2.458.063 3.112.752v9.746c-.935-.53-2.12-.603-3.213-.493-1.18.12-2.37.461-3.287.811V2.828zm7.5-.141c.654-.689 1.782-.886 3.112-.752 1.234.124 2.503.523 3.388.893v9.923c-.918-.35-2.107-.692-3.287-.81-1.094-.111-2.278-.039-3.213.492V2.687zM8 1.783C7.015.936 5.587.81 4.287.94c-1.514.153-3.042.672-3.994 1.105A.5.5 0 0 0 0 2.5v11a.5.5 0 0 0 .707.455c.882-.4 2.303-.881 3.68-1.02 1.409-.142 2.59.087 3.223.877a.5.5 0 0 0 .78 0c.633-.79 1.814-1.019 3.222-.877 1.378.139 2.8.62 3.681 1.02A.5.5 0 0 0 16 13.5v-11a.5.5 0 0 0-.293-.455c-.952-.433-2.48-.952-3.994-1.105C10.413.809 8.985.936 8 1.783z"/>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="blog">
+                <div class="blogDetails">
+                    <div class="blogBullet"><p class="blogNumber">04</p></div>
+                    <div class="blogInfo">
+                        <div class="blogCategory">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="Blue" class="bi bi-journal" viewBox="0 0 16 16">
+                                <path d="M3 0h10a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-1h1v1a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H3a1 1 0 0 0-1 1v1H1V2a2 2 0 0 1 2-2z"/>
+                                <path d="M1 5v-.5a.5.5 0 0 1 1 0V5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1zm0 3v-.5a.5.5 0 0 1 1 0V8h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1zm0 3v-.5a.5.5 0 0 1 1 0v.5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1z"/>
+                            </svg>
+                            Tips</div>
+                        <div class="blogTitle">Should you go to a bootcamp?</div>
+                        <div class="blogSubInfo">
+                            <div class="blogDate">Nov/12/2022</div>
+                            <div class="blogReadLength">1min
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="Blue" class="bi bi-book" viewBox="0 0 16 16">
+                                    <path d="M1 2.828c.885-.37 2.154-.769 3.388-.893 1.33-.134 2.458.063 3.112.752v9.746c-.935-.53-2.12-.603-3.213-.493-1.18.12-2.37.461-3.287.811V2.828zm7.5-.141c.654-.689 1.782-.886 3.112-.752 1.234.124 2.503.523 3.388.893v9.923c-.918-.35-2.107-.692-3.287-.81-1.094-.111-2.278-.039-3.213.492V2.687zM8 1.783C7.015.936 5.587.81 4.287.94c-1.514.153-3.042.672-3.994 1.105A.5.5 0 0 0 0 2.5v11a.5.5 0 0 0 .707.455c.882-.4 2.303-.881 3.68-1.02 1.409-.142 2.59.087 3.223.877a.5.5 0 0 0 .78 0c.633-.79 1.814-1.019 3.222-.877 1.378.139 2.8.62 3.681 1.02A.5.5 0 0 0 16 13.5v-11a.5.5 0 0 0-.293-.455c-.952-.433-2.48-.952-3.994-1.105C10.413.809 8.985.936 8 1.783z"/>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="blog">
+                <div class="blogDetails">
+                    <div class="blogBullet"><p class="blogNumber">05</p></div>
+                    <div class="blogInfo">
+                        <div class="blogCategory">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="Blue" class="bi bi-journal" viewBox="0 0 16 16">
+                                <path d="M3 0h10a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-1h1v1a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H3a1 1 0 0 0-1 1v1H1V2a2 2 0 0 1 2-2z"/>
+                                <path d="M1 5v-.5a.5.5 0 0 1 1 0V5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1zm0 3v-.5a.5.5 0 0 1 1 0V8h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1zm0 3v-.5a.5.5 0 0 1 1 0v.5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1z"/>
+                            </svg>
+                            Tutorial</div>
+                        <div class="blogTitle">Why you should create a blog</div>
+                        <div class="blogSubInfo">
+                            <div class="blogDate">Nov/12/2022</div>
+                            <div class="blogReadLength">10min
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="Blue" class="bi bi-book" viewBox="0 0 16 16">
+                                    <path d="M1 2.828c.885-.37 2.154-.769 3.388-.893 1.33-.134 2.458.063 3.112.752v9.746c-.935-.53-2.12-.603-3.213-.493-1.18.12-2.37.461-3.287.811V2.828zm7.5-.141c.654-.689 1.782-.886 3.112-.752 1.234.124 2.503.523 3.388.893v9.923c-.918-.35-2.107-.692-3.287-.81-1.094-.111-2.278-.039-3.213.492V2.687zM8 1.783C7.015.936 5.587.81 4.287.94c-1.514.153-3.042.672-3.994 1.105A.5.5 0 0 0 0 2.5v11a.5.5 0 0 0 .707.455c.882-.4 2.303-.881 3.68-1.02 1.409-.142 2.59.087 3.223.877a.5.5 0 0 0 .78 0c.633-.79 1.814-1.019 3.222-.877 1.378.139 2.8.62 3.681 1.02A.5.5 0 0 0 16 13.5v-11a.5.5 0 0 0-.293-.455c-.952-.433-2.48-.952-3.994-1.105C10.413.809 8.985.936 8 1.783z"/>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="blogLink"><i>Visit Blog for more content</i></div>
+    </section>
+    <section class="subscribeSection">
+        <div class="recentProjectSubheading">
+            <h1><a href="" style="color: black">Subscribe</a></h1>
+        </div>
+        <form action="" method="post">
+            <label for="email"class="emailLabel">Email</label>
+            <input type="email" name="email" id="email" class="emailBox" placeholder="willis.malik.r@gmail.com">
+            <button class="subscribeBtn">Subscribe</button>
+        </form>
+    </section>
+
+
+
 </main>
-<div class="horizontal-line-container" style="margin-top: 30em">
-    <div class="horizontal-line-link"><a href="#">I.Projects</a></div>
-    <div class="horizontal-line"></div>
-</div>
-<section class="section-1" id="section-1" style="width: 90%">
-    <figure class="recent-project-container">
-        <img class="recent-project-picture" src="images/pexels-mister-mister-2442888.jpg">
-        <figcaption>
-            <div class="recent-project-title">Project Title</div>
-            <div class="recent-project-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum dolores dolorum eos esse est excepturi necessitatibus nostrum perspiciatis sed vero. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum dolores dolorum eos esse est excepturi necessitatibus nostrum perspiciatis sed vero</div>
-            <div class="recent-project-link">Read more
-                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-arrow-up-right" viewBox="0 0 16 16">
-                    <path fill-rule="evenodd" d="M14 2.5a.5.5 0 0 0-.5-.5h-6a.5.5 0 0 0 0 1h4.793L2.146 13.146a.5.5 0 0 0 .708.708L13 3.707V8.5a.5.5 0 0 0 1 0v-6z"/>
-                </svg>
-            </div>
-        </figcaption>
-    </figure>
-
-    <div class="projects">
-        <div class="project-container">
-            <div class="project-details">WeatherMap
-                <p class="project-date" > 10-18-2022 </p>
-            </div>
-            <div class="project-description">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad atque beatae consequatur debitis
-                libero maiores odit perspiciatis, reiciendis sequi voluptatem.
-            </div>
-        </div>
-        <div class="project-container">
-            <div class="project-details">Javascript Calculator
-                <p class="project-date" > 10-18-2022 </p>
-            </div>
-            <div class="project-description">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad atque beatae consequatur debitis
-                libero maiores odit perspiciatis, reiciendis sequi voluptatem. Lorem ipsum dolor sit amet, consectetur
-                adipisicing elit. In, ipsum?
-            </div>
-        </div>
-        <div class="project-container">
-            <div class="project-details">WeatherMap
-                <p class="project-date" > 10-18-2022 </p>
-            </div>
-            <div class="project-description">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad atque beatae consequatur debitis
-                libero maiores odit perspiciatis, reiciendis sequi voluptatem.
-            </div>
-        </div>
-    </div>
-</section>
-<div class="horizontal-line-container">
-    <div class="horizontal-line-link"><a href="#">II.Skills</a></div>
-    <div class="horizontal-line"></div>
-</div>
-<section class="section-2">
-
-
-
-
-</section>
-<section class="section-3">
-    <div class="horizontal-line-container">
-        <div class="horizontal-line-link"><a href="#">III.Blog</a></div>
-        <div class="horizontal-line"></div>
-    </div>
-    <figure class="recent-blog-container">
-        <img class="recent-blog-picture" src="images/pexels-nout-gons-248159.jpg">
-        <figcaption>
-            <div class="recent-blog-title">Blog Title</div>
-            <div class="recent-blog-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum dolores dolorum eos esse est excepturi necessitatibus nostrum perspiciatis sed vero. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum dolores dolorum eos esse est excepturi necessitatibus nostrum perspiciatis sed vero</div>
-            <div class="recent-blog-link">Read more
-                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-arrow-up-right" viewBox="0 0 16 16">
-                    <path fill-rule="evenodd" d="M14 2.5a.5.5 0 0 0-.5-.5h-6a.5.5 0 0 0 0 1h4.793L2.146 13.146a.5.5 0 0 0 .708.708L13 3.707V8.5a.5.5 0 0 0 1 0v-6z"/>
-                </svg>
-            </div>
-        </figcaption>
-    </figure>
-    <h1 style="margin-top: 5em">Latest Post</h1>
-    <ol class="latestpost" type="I">
-        <li>
-            <div class="d-flex flex-row">
-                <div class="px-2">Is web3.0 the foundation of Meta?</div>
-                <div class="px-1">11/06/22</div>
-            </div>
-        </li>
-        <li>
-            <div class="d-flex flex-row">
-                <div class="px-2">Who is going to build the next social Media</div>
-                <div class="px-1">11/06/22</div>
-            </div>
-        </li>
-        <li>
-            <div class="d-flex flex-row">
-                <div class="px-2">What does soical media look like in 40 yrs?</div>
-                <div class="px-1">11/06/22</div>
-            </div>
-        </li>
-        <li>
-            <div class="d-flex flex-row">
-                <div class="px-2">What does soical media look like in 40 yrs?</div>
-                <div class="px-1">11/06/22</div>
-            </div>
-        </li>
-    </ol>
-
-
-
-
-</section>
-
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
 
 <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
-<script src="custom.js"></script>
+<script src="index.js"></script>
 </body>
 </html>
