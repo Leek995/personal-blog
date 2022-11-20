@@ -335,6 +335,25 @@
         object-fit: cover;
         border-radius: 7px;
     }
+
+    .technologiesSection{
+        margin-top: 3em;
+        height: 250vh;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        font-family: 'Roboto Condensed', sans-serif;
+        font-weight: 200;
+    }
+    .parts{
+        display: none;
+    }
+    .techLeft{
+        width: 100%;
+    }
+    .techRight{
+        width: 100%;
+    }
     .techIcon{
         display: flex;
         flex-direction: row;
@@ -370,38 +389,16 @@
         font-weight: 200;
 
     }
-    .technologiesSection{
-        margin-top: 3em;
-        height: 220vh;
-        width: 90%;
-        margin-left: auto;
-        margin-right: auto;
-        font-family: 'Roboto Condensed', sans-serif;
-        font-weight: 200;
-    }
     .technologiesContainer{
         display: flex;
         flex-direction: column;
-
-
         margin-left: auto;
         margin-right: auto;
         width: 90%;
-        height: 50vh;
+        height: 200vh;
     }
-    .icon{
 
-    }
-    .technologiesRow{
-        display: flex;
-        flex-direction: row;
-        height: 100%;
-        width: 100%;
-    }
-    .box{
-        height: 100%;
-        width: 100%;
-    }
+
     .subscribeSection{
         margin-top: 3em;
         height: 80vh;
@@ -846,6 +843,9 @@
         overflow: auto;
         height: 70vh;
     }
+    .recentProjectDescScroll::-webkit-scrollbar{
+        display: none;
+    }
     a:link {
         text-decoration: none;
     }
@@ -938,6 +938,9 @@
         -webkit-overflow-scrolling: touch;
         border-radius: 6px;
     }
+    .moreProjectsDetail::-webkit-scrollbar{
+        display: none;
+    }
     .moreProjectsDetail1{
         display: flex;
         flex-direction: row;
@@ -949,6 +952,9 @@
         overflow-y: hidden;
         -webkit-overflow-scrolling: touch;
         border-radius: 6px;
+    }
+    .moreProjectsDetail1::-webkit-scrollbar{
+        display: none;
     }
     .moreProjectsDetail2{
         display: flex;
@@ -962,6 +968,9 @@
         -webkit-overflow-scrolling: touch;
         border-radius: 6px;
     }
+    .moreProjectsDetail2::-webkit-scrollbar{
+        display: none;
+    }
     .moreProjectsDetail3{
         display: flex;
         flex-direction: row;
@@ -973,6 +982,9 @@
         overflow-y: hidden;
         -webkit-overflow-scrolling: touch;
         border-radius: 6px;
+    }
+    .moreProjectsDetail3::-webkit-scrollbar{
+        display: none;
     }
     .moreProjectsDetail div{
         width: 325px;
@@ -1022,7 +1034,7 @@
     }
     .technologiesSection{
         margin-top: 3em;
-        height: 80vh;
+        /*height: 200vh;*/
         width: 90%;
         margin-left: auto;
         margin-right: auto;
@@ -1037,21 +1049,60 @@
         margin-left: auto;
         margin-right: auto;
         width: 90%;
-        height: 50vh;
+        height: 200vh;
     }
-    .icon{
-
-    }
-    .technologiesRow{
+    .parts{
         display: flex;
         flex-direction: row;
-        height: 100%;
+        justify-content: center;
+        align-items: center;
         width: 100%;
     }
-    .box{
-        height: 100%;
+    .partsSM{
+        display: none;
+    }
+    .techLeft{
         width: 100%;
     }
+    .techRight{
+        width: 100%;
+    }
+    .techIcon{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    .iconBox{
+        width: 60px;
+        height: 60px;
+    }
+    .horizontalLine{
+        width: 90%;
+        height: 1px;
+        border-bottom: 1px solid lightgrey;
+    }
+    .verticalLine{
+        height: 120px;
+        width: 1px;
+        border-right: 1px solid lightgrey;
+        margin-left: 1.5em;
+
+    }
+    .container1{
+        display: flex;
+        flex-direction: row;
+    }
+    .iconTitle{
+        text-align: center;
+        width: 100%;
+        font-size: small;
+        font-family: 'Roboto Condensed', sans-serif;
+        font-weight: 200;
+
+    }
+
     .subscribeSection{
         margin-top: 3em;
         height: 80vh;
