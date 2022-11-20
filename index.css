@@ -235,6 +235,12 @@
         background-color: white;
         padding: 0;
     }
+    .btnIconContainer{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-self: end;
+    }
     .moreProjectsDetail{
         display: flex;
         flex-direction: row;
@@ -329,9 +335,44 @@
         object-fit: cover;
         border-radius: 7px;
     }
+    .techIcon{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    .iconBox{
+        width: 50px;
+        height: 50px;
+    }
+    .horizontalLine{
+        width: 90%;
+        height: 1px;
+        border-bottom: 1px solid lightgrey;
+    }
+    .verticalLine{
+        height: 80px;
+        width: 1px;
+        border-right: 1px solid lightgrey;
+        margin-left: 1.5em;
+
+    }
+    .container1{
+        display: flex;
+        flex-direction: row;
+    }
+    .iconTitle{
+        text-align: center;
+        width: 100%;
+        font-size: small;
+        font-family: 'Roboto Condensed', sans-serif;
+        font-weight: 200;
+
+    }
     .technologiesSection{
         margin-top: 3em;
-        height: 80vh;
+        height: 220vh;
         width: 90%;
         margin-left: auto;
         margin-right: auto;
@@ -341,8 +382,8 @@
     .technologiesContainer{
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
+
+
         margin-left: auto;
         margin-right: auto;
         width: 90%;
@@ -786,6 +827,7 @@
     }
     .recentProjectTitle{
         display: flex;
+        flex-wrap: wrap;
         align-items: center;
         justify-content: center;
         margin-bottom: 10em;
@@ -821,7 +863,7 @@
     }
     a { color: grey; }
     .moreProjectsSection{
-        height: 125vh;
+        height: 200vh;
         margin-top: 10em;
     }
     .moreProjects{
@@ -833,16 +875,22 @@
     .moreProjectsContainer{
         display: flex;
         flex-direction: row;
-        justify-content: space-around;
+        justify-content: space-between;
         align-items: center;
         height: 35vh;
         border-bottom: 1px solid lightgrey;
-        width: 100%;
+        width: 90%;
         /*border-right: none;*/
         /*border-left: none;*/
     }
     .moreProjects:nth-child(4){
         border-bottom: 1px solid lightgrey ;
+    }
+    .btnIconContainer{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-self: end;
     }
     .moreProjectsImg{
         height: 70%;
@@ -852,9 +900,13 @@
         /*box-shadow: rgba(0, 0, 0, 0.18) 0px 2px 4px;*/
     }
     .recentProjectTitle{
-        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         font-family: 'Roboto Condensed', sans-serif;
         font-weight: 400;
+
+
 
     }
     .expandIcon{
